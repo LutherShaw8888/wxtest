@@ -1,0 +1,21 @@
+ wx.uploadFile({
+    url: 'https://xxxxxx/upload/picture',
+    filePath: filePath,//图片路径，如tempFilePaths[0]
+    name: 'image',
+    header : {
+      "Content-Type": "multipart/form-data"
+    },
+    formData:
+    {
+      userId: 12345678 //附加信息为用户ID
+    },
+    success: function (res) {
+      console.log(res);
+    },
+    fail: function (res) {
+      console.log(res);
+    },
+    complete: function (res) {
+
+    }
+  })
